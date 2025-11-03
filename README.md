@@ -292,11 +292,13 @@ AmneziaWG supports advanced traffic obfuscation to bypass censorship and DPI (De
 ### Application logs
 
 `docker exec amnezia-web-ui tail -f /var/log/web-ui/access.log`
+
 `docker exec amnezia-web-ui tail -f /var/log/web-ui/error.log`
 
 ### Nginx logs
 
 `docker exec amnezia-web-ui tail -f /var/log/nginx/access.log`
+
 `docker exec amnezia-web-ui tail -f /var/log/nginx/error.log`
 
 ### Supervisor logs
@@ -308,7 +310,7 @@ Export Configuration
 
 ### Export all configuration via API
 
-`curl http://localhost/api/config/export > amnezia\_backup.json`
+`curl http://localhost/api/config/export > amnezia_backup.json`
 
 ### Backup configuration directory
 
@@ -322,7 +324,7 @@ Export Configuration
 
 ### Test iptables configuration
 
-`curl "http://localhost/api/system/iptables-test?server\_id=wg\_abc123"`
+`curl "http://localhost/api/system/iptables-test?server_id=wg_abc123"`
 
 # Security
 The app is exposed directly without authentication.
